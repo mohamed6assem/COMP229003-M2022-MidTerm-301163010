@@ -1,7 +1,10 @@
 {
   "name": "comp229.m2022.midterm",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
+  "engines": {
+    "node" : "16.15.0"
+  },
   "scripts": {
     "start": "node ./server.js"
   },
@@ -38,3 +41,5 @@
   "author": "Julio Vinicius",
   "license": "MIT"
 }
+
+  
