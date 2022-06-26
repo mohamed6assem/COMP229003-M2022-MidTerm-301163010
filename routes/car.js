@@ -22,9 +22,11 @@ function requireAuth(req, res, next)
 }
 
 /* GET list of items */
+// absence of requireAuth enables people who aren't signed in to access list of cars
 router.get('/list', carController.carList);
 
 // Route for Details
+// absence of requireAuth enables people who aren't signed in to access details of cars
 router.get('/details/:id', carController.details);
 
 // Routers for edit

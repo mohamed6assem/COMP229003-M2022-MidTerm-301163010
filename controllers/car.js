@@ -71,7 +71,7 @@ module.exports.processAddPage = (req, res, next) => {
         price: req.body.price  
 
     });
-
+//shows error and redirects user to car list if there is no error
     CarModel.create(newCar, (err, car)=>{
     if(err){
         console.log(err);
