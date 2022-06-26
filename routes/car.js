@@ -14,7 +14,7 @@ function requireAuth(req, res, next)
     
     if(!req.isAuthenticated()){
         req.session.url = req.originalUrl;
-        return res.redirect('/users/sign');
+        return res.redirect('/users/signin');
 
     }   
     next();     
