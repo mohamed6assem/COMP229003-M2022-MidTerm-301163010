@@ -49,7 +49,7 @@ module.exports.displayAddPage = (req, res, next) => {
     let newCar = CarModel();
     
     res.render('cars/add_edit', {
-        title: 'Add a new Car',
+        title: 'Add a New Car',
         car: newCar,
         userName: req.user ? req.user.username : ''
     });
@@ -97,7 +97,7 @@ module.exports.displayEditPage = (req, res, next) => {
         }
         else{
             res.render('cars/add_edit', {
-               title: 'Edit car',
+               title: 'Edit Car',
                car: carToEdit,
                userName: req.user ? req.user.username : '' 
             })
@@ -131,7 +131,7 @@ module.exports.processEditPage = (req, res, next) => {
         res.end(err);
     }
     else{
-        console.log(car);
+        //console.log(car);
         res.redirect('/cars/list');
     }
 });
